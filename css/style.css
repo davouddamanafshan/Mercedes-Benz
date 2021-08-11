@@ -1,0 +1,24 @@
+/* Responsive: responsive don't in other browsers, responsive in lower screen until 300px */
+
+@import url(header.css);
+@import url(slider.css);
+@import url(color.css);
+@import url(beautiful.css);
+@import url(rare.css);
+@import url(gift.css);
+@import url(pot.css);
+@import url(footer.css);
+@font-face {
+    font-family: 'Open-Sans';
+    src: url('../fonts/open-sans/Open-Sans.woff2') format('woff2');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open-Sans', sans-serif;
+}

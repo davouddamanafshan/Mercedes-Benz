@@ -1,0 +1,439 @@
+.WP-beautiful {
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    justify-items: center;
+    margin-top: 15vh;
+}
+
+.WPB-main {
+    width: 85%;
+    display: grid;
+    grid-template-rows: repeat(13, 1fr) .75fr;
+    grid-template-columns: 1fr;
+}
+
+.WPBM-title {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    display: grid;
+    justify-content: center;
+}
+
+.WPBM-title>h2 {
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: #545;
+    margin-bottom: 10px;
+}
+
+.WPBM-section {
+    grid-row: 3/14;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.WPBMS-red {
+    border-right: 3.5px solid #fff;
+    display: grid;
+    grid-row: 1/3;
+    grid-column: 1/2;
+    background-image: url(../images/beautiful/vision\ avtr.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    transition: transform .5s;
+    border-radius: 15px;
+}
+
+.WPBMS-red:hover {
+    transform: scale(1.08);
+    transition: transform .5s;
+    z-index: 1;
+    border: none;
+    box-shadow: 0 20px 20px #222;
+}
+
+.WPBMS-red>div {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    background: linear-gradient(rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1));
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.WPBMS-red>div>h3 {
+    grid-row: 6/7;
+    grid-column: 1/2;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: #fff;
+}
+
+.WPBMS-red>div>button {
+    margin-top: 7.5%;
+    grid-row: 6/8;
+    grid-column: 1/2;
+    width: 10rem;
+    height: 3rem;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    border-radius: 4px;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.WPBMS-red>div>button:hover {
+    background-color: #fff;
+    border: none;
+    color: #545;
+    cursor: pointer;
+}
+
+.WPBMS-white {
+    border-right: 3.5px solid #fff;
+    border-left: 3.5px solid #fff;
+    border-bottom: 3.5px solid #fff;
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    background-image: url(../images/beautiful/biome\ hypercar.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: transform .5s;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.WPBMS-white:hover {
+    transform: scale(1.15);
+    transition: transform .5s;
+    z-index: 1;
+    border: none;
+    box-shadow: 0 20px 20px #222;
+}
+
+.WPBMS-white>div {
+    background: linear-gradient(rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1));
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.WPBMS-white>div>h3 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: #fff;
+    margin-bottom: 1%;
+}
+
+.WPBMS-white>div>button {
+    grid-row: 3/5;
+    grid-column: 1/2;
+    width: 10rem;
+    height: 3rem;
+    margin-top: 7%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    border-radius: 4px;
+    outline: none;
+}
+
+.WPBMS-white>div>button:hover {
+    background-color: #fff;
+    border: none;
+    color: #545;
+    cursor: pointer;
+}
+
+.WPBMS-beau {
+    border-right: 3.5px solid #fff;
+    border-left: 3.5px solid #fff;
+    border-top: 3.5px solid #fff;
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-image: url(../images/beautiful/eqs\ vision.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: transform .5s;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.WPBMS-beau:hover {
+    transform: scale(1.15);
+    transition: transform .5s;
+    z-index: 1;
+    border: none;
+    box-shadow: 0 20px 20px #222;
+}
+
+.WPBMS-beau>div {
+    background: linear-gradient(rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1));
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.WPBMS-beau>div>h3 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: #fff;
+    margin-bottom: 7%;
+}
+
+.WPBMS-beau>div>button {
+    grid-row: 3/5;
+    grid-column: 1/2;
+    width: 10rem;
+    height: 3rem;
+    margin-top: 3.5%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    border-radius: 4px;
+    outline: none;
+}
+
+.WPBMS-beau>div>button:hover {
+    background-color: #fff;
+    border: none;
+    color: #545;
+    cursor: pointer;
+}
+
+.WPBMS-yellow {
+    border-left: 3.5px solid #fff;
+    display: grid;
+    grid-row: 1/3;
+    grid-column: 3/4;
+    background-image: url(../images/beautiful/maybach.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: transform .5s;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.WPBMS-yellow:hover {
+    transform: scale(1.08);
+    transition: transform .5s;
+    z-index: 1;
+    border: none;
+    box-shadow: 0 20px 20px #222;
+}
+
+.WPBMS-yellow>div {
+    background: linear-gradient(rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1));
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.WPBMS-yellow>div>h3 {
+    grid-row: 6/7;
+    grid-column: 1/2;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: #fff;
+}
+
+.WPBMS-yellow>div>button {
+    grid-row: 6/8;
+    grid-column: 1/2;
+    width: 10rem;
+    height: 3rem;
+    margin-top: 7.5%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    border-radius: 4px;
+    outline: none;
+}
+
+.WPBMS-yellow>div>button:hover {
+    background-color: #fff;
+    border: none;
+    color: #545;
+    cursor: pointer;
+}
+
+
+/* Media screen */
+
+@media screen and (max-width: 1350px) {
+    .WPBM-title>h2 {
+        font-size: 22px;
+    }
+    .WPBM-section>div>div>h3 {
+        font-size: 13px;
+    }
+    .WPBM-section>div>div>button {
+        width: 9rem;
+        height: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .WPBM-title>h2 {
+        font-size: 20px;
+    }
+    .WPBM-section>div>div>h3 {
+        font-size: 12px;
+    }
+    .WPBM-section>div>div>button {
+        width: 8.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .WPBM-title>h2 {
+        font-size: 18px;
+    }
+    .WPBM-section>div>div>h3 {
+        font-size: 10px;
+    }
+    .WPBM-section>div>div>button {
+        width: 8rem;
+        height: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .WP-beautiful {
+        margin-top: 27rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .WPBM-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .WPBM-section>div>div>h3 {
+        font-size: 11px;
+    }
+    .WPBMS-red {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        border-bottom: 3.5px solid #fff;
+    }
+    .WPBMS-red:hover {
+        transform: scale(1.15);
+    }
+    .WPBMS-red>div {
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .WPBMS-red>div>h3 {
+        grid-row: 3/4;
+        margin-bottom: 1%;
+        text-indent: -9999px;
+    }
+    .WPBMS-red>div>h3:before {
+        text-indent: 0;
+        content: 'THE RED ROSE OF HEAVEN';
+        float: left;
+    }
+    .WPBMS-red>div>button {
+        margin-top: 7%;
+        grid-row: 3/5;
+    }
+    .WPBMS-white {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        border-top: 3.5px solid #fff;
+        border-left: none;
+        border-bottom: none;
+    }
+    .WPBMS-beau {
+        grid-row: 1/2;
+        grid-column: 2/3;
+        border-top: none;
+        border-right: none;
+        border-bottom: 3.5px solid #fff;
+    }
+    .WPBMS-beau>div>h3 {
+        margin-bottom: 1%;
+    }
+    .WPBMS-beau>div>button {
+        margin-top: 7%;
+    }
+    .WPBMS-yellow {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        border-top: 3.5px solid #fff;
+    }
+    .WPBMS-yellow:hover {
+        transform: scale(1.15);
+    }
+    .WPBMS-yellow>div {
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .WPBMS-yellow>div>h3 {
+        grid-row: 3/4;
+        margin-bottom: 1%;
+        text-indent: -9999px;
+    }
+    .WPBMS-yellow>div>h3:before {
+        text-indent: 0;
+        content: 'MICHELANGELO ROSE FLOWERS';
+        float: left;
+    }
+    .WPBMS-yellow>div>button {
+        margin-top: 7%;
+        grid-row: 3/5;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .WP-beautiful {
+        margin-top: 25rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .WP-beautiful {
+        margin-top: 19rem;
+    }
+    .WPBM-title {
+        align-content: center;
+        margin-bottom: 15px;
+    }
+}

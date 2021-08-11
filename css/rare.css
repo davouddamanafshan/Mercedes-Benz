@@ -1,0 +1,249 @@
+.WP-rare {
+    margin-top: 15vh;
+    height: 70vh;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+}
+
+.WPR-main {
+    width: 85%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+}
+
+.WPRM-title {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: 2fr repeat(2, 1fr) 1.5fr 2fr;
+    grid-template-columns: 1fr;
+}
+
+.WPRM-title>h2 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    justify-self: center;
+    align-self: end;
+    padding: 2px 15px;
+    /* border: 2px solid #545; */
+    font-weight: 100;
+    letter-spacing: 1px;
+    /* color: #545; */
+    /* box-shadow: 0 7px 10px #888; */
+}
+
+.WPRM-title>h3 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    align-self: start;
+    margin-top: 15px;
+    justify-self: center;
+    padding: 2px 15px;
+    /* border: 2px solid #545; */
+    outline-offset: 4px;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    /* color: #545; */
+    /* box-shadow: 0 7px 10px #888; */
+}
+
+.WPRM-title>button {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    justify-self: center;
+    border-radius: 15px;
+    background-color: white;
+    width: 10rem;
+    height: 3rem;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    cursor: pointer;
+    outline: none;
+    transition: transform .2s;
+}
+
+.WPRM-title>button:hover {
+    border: none;
+    color: #12b4d8;
+    font-size: 16px;
+    transform: translate(5px, 5px);
+    box-shadow: 5px 5px 5px #60b3c57c;
+    background-color: white;
+}
+
+.WPRM-section {
+    justify-self: end;
+    width: 40rem;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: 0fr 0fr repeat(10, 1fr);
+    margin-right: 30px;
+}
+
+.WPRMS-r1 {
+    grid-row: 1/6;
+    grid-column: 7/13;
+    display: grid;
+    border: 8px solid rgba(0, 0, 0, 0);
+    outline: 2px solid #aaa;
+    transition: transform .5s;
+}
+
+.WPRMS-r1:hover {
+    transform: scale(1.1);
+    transition: transform .5s;
+    z-index: 1;
+    box-shadow: 0 20px 20px #222;
+}
+
+.WPRMS-r1>img {
+    width: 100%;
+    height: 100%;
+}
+
+.WPRMS-r2 {
+    grid-row: 8/13;
+    grid-column: 6/12;
+    display: grid;
+    border: 8px solid rgba(0, 0, 0, 0);
+    outline: 2px solid #aaa;
+    transition: transform .5s;
+}
+
+.WPRMS-r2:hover {
+    transform: scale(1.1);
+    transition: transform .5s;
+    z-index: 1;
+    box-shadow: 0 20px 20px #222;
+}
+
+.WPRMS-r2>img {
+    width: 100%;
+    height: 100%;
+}
+
+.WPRMS-r3 {
+    grid-row: 3/12;
+    grid-column: 3/8;
+    display: grid;
+    border: 8px solid rgba(0, 0, 0, 0);
+    outline: 2px solid #aaa;
+    transition: transform .5s;
+}
+
+.WPRMS-r3:hover {
+    transform: scale(1.1);
+    transition: transform .5s;
+    z-index: 1;
+    box-shadow: 0 20px 20px #222;
+}
+
+.WPRMS-r3>img {
+    width: 100%;
+    height: 100%;
+}
+
+.WPRMS-r4 {
+    grid-row: 2/7;
+    grid-column: 6/11;
+    display: grid;
+    border: 8px solid rgba(0, 0, 0, 0);
+    outline: 2px solid #aaa;
+    transition: transform .5s;
+}
+
+.WPRMS-r4:hover {
+    transform: scale(1.1);
+    transition: transform .5s;
+    z-index: 1;
+    box-shadow: 0 20px 20px #222;
+}
+
+.WPRMS-r4>img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Media screen */
+
+@media screen and (max-width: 1350px) {
+    .WP-rare {
+        height: 88vh;
+        margin-top: 5vh;
+    }
+    .WPR-main {
+        grid-template-rows: 2fr 11.5fr 2.5fr;
+        grid-template-columns: 1fr;
+    }
+    .WPRM-title {
+        grid-row: 1/4;
+        grid-template-rows: .25fr .25fr 5fr 1fr;
+    }
+    .WPRM-title>h2 {
+        font-size: 22px;
+        grid-row: 1/2;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+    }
+    .WPRM-title>h3 {
+        grid-row: 2/3;
+        border: none;
+        box-shadow: none;
+        font-size: 15px;
+        padding: 0;
+        margin-top: 5px;
+    }
+    .WPRM-title>button {
+        display: none;
+    }
+    .WPRM-section {
+        margin-right: 0;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .WPRM-title>h2 {
+        font-size: 18px;
+    }
+    .WPRM-title>h3 {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .WPRM-section {
+        width: 35rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .WP-rare {
+        height: 80vh;
+        margin-top: 5vh;
+    }
+    .WPRM-section {
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .WP-rare {
+        height: 70vh;
+        margin-top: 5vh;
+    }
+    .WPRM-section {
+        width: 25rem;
+    }
+}

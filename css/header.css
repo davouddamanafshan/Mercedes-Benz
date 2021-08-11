@@ -1,0 +1,183 @@
+.WP-header {
+    width: 100%;
+    height: 7vh;
+    position: sticky;
+    top: 0;
+    background-color: rgba(133, 119, 133, 0.9);
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-areas: ". WPH-main .";
+    box-shadow: 0 3px 3px rgba(133, 119, 133, 0.75);
+    z-index: 10;
+}
+
+.logo-1 {
+    display: inline-block;
+}
+
+.para {
+    display: inline-block;
+}
+
+.WPH-main {
+    grid-area: WPH-main;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 15% 12.5% 45% 12.5% 15%;
+    grid-template-areas: "WPHD-logo . WPHD-menu . WPHD-search";
+}
+
+.WPHM-logo {
+    overflow: hidden;
+    width: 100%;
+    grid-area: WPHD-logo;
+    display: grid;
+}
+
+.WPHM-logo>a {
+    display: flex;
+    align-self: center;
+}
+
+.WPHM-logo>a>img {
+    align-self: center;
+}
+
+.WPHM-logo>a>p {
+    padding-top: .7rem;
+    color: white;
+    font-weight: 600;
+}
+
+.WPHM-logo>a>p>span {
+    color: rgb(14, 14, 14);
+}
+
+.WPHM-menu {
+    overflow: hidden;
+    width: 40rem;
+    grid-area: WPHD-menu;
+    justify-self: center;
+    display: grid;
+}
+
+.WPHM-menu>i {
+    display: none;
+}
+
+.WPHM-menu>nav {
+    display: grid;
+}
+
+.WPHM-menu>nav>ul {
+    display: grid;
+    grid-template: column;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.WPHM-menu>nav>ul>li {
+    list-style-type: none;
+}
+
+.WPHM-menu>nav>ul>li>a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15PX;
+    transition: all .2s;
+}
+
+.WPHM-menu>nav>ul>li>a:hover {
+    color: #85d3e4;
+    font-size: 16px;
+}
+
+.WPHM-search {
+    grid-area: WPHD-search;
+    display: grid;
+}
+
+.WPHM-search>form {
+    display: grid;
+    align-items: center;
+    justify-items: end;
+}
+
+.WPHM-search>form>button {
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+    cursor: pointer;
+}
+
+.WPHM-search>form>button>i {
+    color: #fff;
+    font-size: 19px;
+    transition: all .1s;
+}
+
+.WPHM-search>form>button>i:hover {
+    color: #85d3e4;
+    font-size: 21px;
+}
+
+
+/* Media screen */
+
+@media screen and (max-width: 1200px) {
+    .WPHM-logo>a>img {
+        content: url(../images/header/logo\ mb.png);
+    }
+    .WPHM-logo>a>p {
+        padding-top: .9rem;
+        font-size: 10px;
+    }
+    .WPHM-menu {
+        width: 30rem;
+    }
+    .WPHM-menu>nav>ul>li>a {
+        font-size: 13px;
+    }
+    .WPHM-menu>nav>ul>li>a:hover {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .WPHM-logo>a>img {
+        content: url(../images/header/logo\ mb.png);
+    }
+    .WPHM-logo>a>p {
+        display: none;
+    }
+    .WPH-main {
+        grid-template-columns: 15% 63% 15% 7%;
+        grid-template-areas: "WPHD-logo . WPHD-search WPHD-menu";
+    }
+    .WPHM-menu {
+        width: 2rem;
+        height: 2rem;
+        justify-self: end;
+        align-self: center;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+    }
+    .WPHM-menu>i {
+        font-size: 22px;
+        color: #fff;
+        display: inline;
+    }
+    .WPHM-menu>i:hover {
+        font-size: 25px;
+        color: #85d3e4;
+    }
+    .WPHM-menu>nav {
+        display: none;
+    }
+}

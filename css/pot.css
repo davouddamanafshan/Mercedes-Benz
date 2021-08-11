@@ -1,0 +1,208 @@
+.WP-pot {
+    margin-top: 15vh;
+    width: 100%;
+    height: 85vh;
+    display: grid;
+    justify-items: center;
+}
+
+.WPP-main {
+    width: 85%;
+    display: grid;
+    grid-template-rows: repeat(14, 1fr);
+    grid-template-columns: 1fr;
+}
+
+.WPPM-title {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    display: grid;
+    justify-content: center;
+}
+
+.WPPM-title>h2 {
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: #545;
+}
+
+.WPPM-section {
+    grid-row: 3/14;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr .05fr 1fr .05fr 1fr;
+}
+
+.WPPMS-plant {
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+
+.WPPMS-grow {
+    grid-row: 1/3;
+    grid-column: 3/4;
+}
+
+.WPPMS-keep {
+    grid-row: 1/3;
+    grid-column: 5/6;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 15px;
+}
+
+.flip-card-front>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.flip-card-back {
+    background-color: rgb(114, 74, 114);
+    color: white;
+    border-radius: 15px;
+    transform: rotateY(180deg);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    cursor: default;
+}
+
+.flip-card-back>h2 {
+    font-size: 35px;
+}
+
+.flip-card-back>P {
+    padding: 0 45px;
+    text-align: justify;
+}
+
+.flip-card-back>button {
+    width: 10rem;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    border-radius: 4px;
+    outline: none;
+}
+
+.flip-card-back>button:hover {
+    background-color: #fff;
+    border: none;
+    color: #545;
+    cursor: pointer;
+}
+
+
+/* Media screen */
+
+@media screen and (max-width: 1200px) {
+    .flip-card-back>P {
+        padding: 0 35px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .WPPM-title>h2 {
+        font-size: 18px;
+    }
+    .flip-card-back>h2 {
+        font-size: 25px;
+    }
+    .flip-card-back>P {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .flip-card-back>h2 {
+        font-size: 20px;
+    }
+    .flip-card-back>P {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .flip-card-back>button {
+        width: 8rem;
+        height: 2.5rem;
+    }
+    .flip-card-back>P {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .WP-pot {
+        height: 65vh;
+    }
+    .WPPM-title>h2 {
+        margin-top: 10px;
+    }
+    .WP-pot {
+        margin-top: 10vh;
+    }
+    .WPPM-title>h2 {
+        font-size: 15px;
+    }
+    .flip-card-back>h2 {
+        font-size: 15px;
+    }
+    .flip-card-back>P {
+        font-size: 10px;
+    }
+    .flip-card-back>button {
+        width: 7rem;
+        height: 2rem;
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .flip-card-back>P {
+        padding: 0 10px;
+    }
+    .flip-card-back>button {
+        width: 6rem;
+        height: 1.5rem;
+        font-size: 10px;
+    }
+}
